@@ -21,7 +21,10 @@ void	taking_forks(t_philo *philo)
 	else
 		other_philos_taking_forks(philo);
 	if (repetitiv_death_checking(philo->params))
+	{
+		leaving_forks(philo);
 		return ;
+	}
 	print_status(philo, FORK);
 	print_status(philo, FORK);
 }
