@@ -85,7 +85,6 @@ void		join_threads(t_param *params);
 void		leaving_forks(t_philo *philo);
 void		*monitor(void *arg);
 int			more_argument_checking(int argc, char **argv);
-int			number_of_meals(t_philo *philo);
 int			other_philos_taking_forks(t_philo *philo);
 void		print_status(t_philo *philo, int act);
 void		*routin(void *arg);
