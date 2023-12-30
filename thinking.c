@@ -18,10 +18,3 @@ void	thinking(t_philo *philo)
 		return ;
 	print_status(philo, THINK);
 }
-
-int	number_of_meals(t_philo *philo)
-{
-	if (philo->meals_eaten == philo->params->meals_n)
-		return (1);
-	return (0);
-}
