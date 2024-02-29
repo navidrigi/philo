@@ -25,7 +25,7 @@ void	create_threads(t_param *params)
 		params->philos[i].last_time_eaten = get_current_time();
 		pthread_create(&params->philos[i].thread, NULL, routin,
 			&params->philos[i]);
-		ft_usleep(1);
+		ft_usleep(500);
 		i++;
 	}
 	pthread_create(&params->monitor, NULL, monitor, (void *)params);
